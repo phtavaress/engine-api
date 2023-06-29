@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "request": "^2.88.2"
+    "react-native-get-random-values": "^1.9.0",
+    "request": "^2.88.2",
+    "uuid": "^9.0.0"
   }
 }

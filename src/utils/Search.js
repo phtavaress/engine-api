@@ -16,11 +16,12 @@ const search = (query, callback) => {
             newItem = {
                 title: result.title,
                 link: result.link,
-                icon: `${faviconUrl}${result.link}`
+                icon: `${faviconUrl}${result.link}&sz=256`
             }
             list.push(newItem)
         })
-         callback(undefined, list);
+        
+        callback(undefined, list);
     })
 };
 
