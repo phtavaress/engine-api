@@ -2,6 +2,7 @@ const express = require('express');
 const search = require('./src/utils/Search')
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.get('/search', (request, response) => {
     if(!request.query.q) {
@@ -20,3 +21,7 @@ app.get('/search', (request, response) => {
     });
     
 })
+
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
+});
